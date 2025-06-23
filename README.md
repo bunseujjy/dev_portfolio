@@ -4,7 +4,7 @@ A clean and interactive personal portfolio built with **Next.js**, **Tailwind CS
 
 ## 🔗 Live Demo
 
-Check out the live portfolio 👉 [https://bunseueng.dev.vercel.app](https://bunseueng.dev.vercel.app)
+Check out the live portfolio 👉 [https://bunseuengdev.vercel.app](https://bunseuengdev.vercel.app)
 
 ## ✨ Features
 

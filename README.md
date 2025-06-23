@@ -1,36 +1,119 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💼 Developer Portfolio
 
-## Getting Started
+A clean and interactive personal portfolio built with **Next.js**, **Tailwind CSS**, and modern UI practices — designed to showcase your development skills, projects, experiences, and more.
 
-First, run the development server:
+## 🔗 Live Demo
+
+Check out the live portfolio 👉 [https://bunseueng.dev.vercel.app](https://bunseueng.dev.vercel.app)
+
+## ✨ Features
+
+- 🌐 Fully responsive layout
+- ⚡ Fast performance with Next.js & Static Generation
+- 🎨 Styled with Tailwind CSS + custom components
+- 🧠 Dynamic data structure with JSON files
+- 💼 Sections:
+  - About Me
+  - Experience
+  - Projects
+  - Tech Stack
+  - Education
+  - Interests
+  - Contact
+- 📥 Downloadable CV
+- 🗂 VSCode-like terminal simulation (cool CLI-inspired UI)
+
+## 🛠 Tech Stack
+
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Shadcn/ui](https://ui.shadcn.com/) (Optional)
+- JSON-based content structure
+
+## 📁 Folder Structure
+
+```
+📦 dev_portfolio
+├── assets
+├── public
+├── react-email-starter
+src/
+├── app/
+│   ├── about-me/           # About page
+│   ├── api/                # API routes (if using server actions or API endpoints)
+│   ├── blogposts/          # Blog pages or MDX blog entries
+│   ├── component/          # Possibly shared UI pieces used across app routes
+│   ├── contact/            # Contact form/page
+│   ├── projects/           # Projects/Portfolio page
+│   ├── technology/         # Tech stack / skills section
+│   ├── favicon.ico
+│   ├── apple-icon.png
+│   ├── icon0.svg / icon1.png
+│   ├── manifest.json       # PWA manifest
+│   ├── opengraph-image.jpg # Social sharing image
+│   ├── globals.css         # Global styles
+│   ├── layout.tsx          # App layout (shared header/footer)
+│   └── page.tsx            # Home page
+├── components/             # Reusable React components
+├── lib/                    # Utilities / helpers / server functions
+├── .env                    # Environment variables
+├── components.json         # Possibly icon or UI config
+├── eslint.config.mjs       # ESLint configuration
+├── next.config.ts          # Next.js configuration
+├── postcss.config.mjs      # PostCSS setup (used by Tailwind)
+├── tsconfig.json           # TypeScript config
+├── package.json            # Dependencies and scripts
+├── README.md               # Project documentation
+```
+
+## 🚀 Getting Started
+
+### 1. Clone the Repo
+
+```bash
+git clone https://github.com/bunseujjy/dev_portfolio.git
+cd dev_portfolio
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+# or
+yarn install
+```
+
+### 3. Run Development Server
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Your app will be running at [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 4. Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+## 🧠 Customize
 
-To learn more about Next.js, take a look at the following resources:
+- Edit your information in `/data/personal-info/` and `/data/tech-stack/`
+- Replace images/logos inside `/public/`
+- Update meta info inside `app/layout.tsx` or `next.config.js` if needed
+- Configure CV download in `/app/cv-download`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📝 License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project is open source and available under the [MIT License](LICENSE).
 
-## Deploy on Vercel
+## 🙋‍♂️ Author
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Developed by [bunseujjy](https://github.com/bunseujjy)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Want to collaborate or have feedback? Feel free to open an issue or reach out!

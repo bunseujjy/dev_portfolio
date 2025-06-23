@@ -4,12 +4,13 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import TerminalSnippet from "./TerminalSnippet";
-import { ProfileData } from "../types/ProfileTypes";
 import Footer from "./Footer";
+import { developer_info } from "@/lib/developer";
 
-export default function HeroSection(config: ProfileData) {
+export default function HeroSection() {
   const [isMobile, setIsMobile] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const config = developer_info[0];
 
   useEffect(() => {
     if (window.innerWidth <= 1024) setIsMobile(true);
@@ -48,12 +49,12 @@ export default function HeroSection(config: ProfileData) {
                 Hi all, I am
               </span>
               <h1 className="font-fira-code pt-4 pb-4 text-xl md:text-2xl lg:text-3xl xl:text-6xl font-bold leading-none text-white">
-                {config.config.name}
+                {config.name}
               </h1>
               <span className="diple flex text-sm! text-purple-500!">
                 {">"}
                 <h2 className="line-1 anim-typewriter max-w-fit font-fira-code text-xl! leading-none text-purple-500 ml-2">
-                  {config.config.role}
+                  {config.role}
                 </h2>
               </span>
             </div>
@@ -82,10 +83,10 @@ export default function HeroSection(config: ProfileData) {
                 <span className="text-white"> = </span>
                 <a
                   className="text-amber-500 underline underline-offset-4 pl-2"
-                  href={`https://github.com/${config.config.contacts?.social.github.user}`}
+                  href={`https://github.com/${config.contacts?.social.github.user}`}
                 >
                   &rdquo;https://github.com/
-                  {config.config.contacts?.social.github.user}&rdquo;
+                  {config.contacts?.social.github.user}&rdquo;
                 </a>
               </p>
             </div>

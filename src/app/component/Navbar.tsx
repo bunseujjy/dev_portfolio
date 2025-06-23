@@ -5,12 +5,12 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import GithubCorner from "./GithubCorner";
-import type { ProfileData } from "../types/ProfileTypes";
+import { developer_info } from "@/lib/developer";
 
-export default function Navbar(config: ProfileData) {
+export default function Navbar() {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
+  const config = developer_info[0];
   const isActive = (route: string) => pathname === route;
 
   const navLinks = [
@@ -25,14 +25,14 @@ export default function Navbar(config: ProfileData) {
     <header className="w-full flex-shrink-0">
       {/* Desktop Navigation */}
       <nav className="hidden lg:flex w-full justify-between border-b border-[#1E2D3D] h-[45px] text-[13px]">
-        <GithubCorner url="https://github.com/alexdeploy/developer-portfolio-v2" />
+        <GithubCorner url="https://github.com/bunseujjy" />
 
         <div className="flex">
           <Link
             href="/"
             className="border-r border-[#1E2D3D] text-[var(--menu-text)] font-fira_retina px-6 h-full flex items-center hover:bg-[#1e2d3d74] hover:text-white"
           >
-            {config.config.logo_name}
+            {config.logo_name}
           </Link>
 
           {navLinks.map((link) => (
@@ -66,7 +66,7 @@ export default function Navbar(config: ProfileData) {
       <nav className="lg:hidden border-b border-[#1E2D3D]">
         <div className="flex items-center justify-between px-4 py-3">
           <Link href="/" className="text-white font-fira_retina text-sm">
-            {config.config.logo_name}
+            {config.logo_name}
           </Link>
           <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
             {isMobileMenuOpen ? (

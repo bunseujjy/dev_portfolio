@@ -1,4 +1,5 @@
-{
+export const developer_info = [
+    {
     "name": "Eng Bunseu",
     "logo_name": "engbunseu",
     "role": "Front-end developer",
@@ -160,3 +161,4 @@
         }
     }
 }
+]
